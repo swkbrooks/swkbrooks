@@ -1,0 +1,269 @@
+/*
+ * Globals
+ */
+
+/* Links */
+/*a,
+a:focus,
+a:hover {
+  color: #D5A056;
+}*/
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:hover{
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: transparent;
+  /*border: .05rem solid #91ACBF;*/
+  border: transparent;
+}
+
+.btn-secondary:hover{
+  color: #273456;
+  background-color: #fff;
+}
+
+.btn-secondary:active:focus{
+  color: #273456;
+  background-color: #fff;
+}
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  /*background-color: #273456;*/
+  background-color: #0C1421;
+  font-family: "Anonymous Pro";
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+.inner .cover {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+/*masthead restyling*/
+.nav-masthead .nav-link,
+.nav-link{
+  padding: .25rem 0;
+  font-weight: lighter;
+  color: rgba(145, 172, 191, 1);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  text-shadow: -.02em 0 #0C1421,0 .02em #0C1421,.02em 0 #0C1421,0 -.02em #0C1421;
+}
+
+/*#0C1421*/
+
+/*masthead hover*/
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus,
+.nav-link:hover,
+.nav-link:focus{
+  border-bottom-color: rgba(145, 172, 191, .5);
+}
+
+
+.masthead-brand .active{
+  color: #fff;
+  border-bottom-color: #D61A11;
+}
+
+/*masthead spacing*/
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+
+/*masthead active coloring*/
+.nav-masthead .active{
+  color: #fff;
+  border-bottom-color: #D61A11;
+}
+
+.masthead-brand .nav-link:hover,
+.masthead-brand .nav-link:focus{
+  border-bottom-color: rgba(145, 172, 191, .5);
+  color: rgba(145, 172, 191, 1);
+}
+
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: light;
+  font-size: 1.5rem;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 52rem;
+  }
+}
+
+/*===================================*/
+/*ADDED*/
+
+/*spacer*/
+.spacer{
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-shadow: transparent;
+}
+
+/*solid navbar*/
+/*.navbar{
+  background-color: #0C1421
+}
+*/
+
+
+/*social media icons*/
+.social,
+.social:hover,
+.social:focus{
+  color: rgba(145, 172, 191, 1);
+  border-color: transparent;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.social:hover,
+.social:focus{
+  text-color: #D61A11;
+  /*color: #273456;*/
+}
+
+.link-social,
+.link-social:hover,
+.link-social:focus{
+  color: transparent;
+  border-color: transparent;
+  text-shadow: none;
+}
+
+.link-social:focus{
+    text-color: #D61A11;
+    border-bottom-color: #D61A11;
+}
+
+.body-text{
+  text-align: left;
+}
+
+p {
+  font-size: 1vh;
+}
+
+/*===================================*/
+/*About*/
+.about-head{
+  font-size: 3em;
+  text-align: left;
+  margin-bottom: .5em;
+}
+
+.about-p{
+  font-size:1em;
+  text-align: left;
+  margin-bottom: 1em;
+}
